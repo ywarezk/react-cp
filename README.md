@@ -70,5 +70,16 @@ React course for beginners given to Check Point on November 2019
   - Video Lecture: https://www.youtube.com/watch?v=-tmLZX6scnY
 
 - Component communication
-  - 
+  - props
+  - ref
+  - children
+  - context
+  - publish subscribe
+  - video lecture: https://youtu.be/UAQSiaWG9kM
+
+  - Redux
+    - Component communication
+    - What is Redux
+    - 
+    - Video Lecture: https://youtu.be/7pZmBah66zE
 
