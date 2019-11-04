@@ -31,7 +31,7 @@ React course for beginners given to Check Point on November 2019
 - JSX
   - what is JSX
   - JSX Rules
-  - Video Lecture: 
+  - Video Lecture: https://www.youtube.com/watch?v=s_ctvfeA58c&feature=youtu.be
 
 - create-react-app
   - going over the files
@@ -41,9 +41,22 @@ React course for beginners given to Check Point on November 2019
   - Video Lecture: https://www.youtube.com/watch?v=n-GATg31ctE&feature=youtu.be
 
 - React Component
+  - Function Component
+  - Class Component
+  - Props, prop-types, defaultProps
+  - state, useState
+  - Events
   - Video Lecture: https://www.youtube.com/watch?v=jpmyfv_w-fw&feature=youtu.be
 
 - React Component EX
   - Video Lecture: https://www.youtube.com/watch?v=8vgzC3CI510
+
+- Forms
+  - login form
+  - what we want to do with forms
+  - Uncontrolled, ref, useRef, createRef
+  - controlled
+  - code duplication problem
+  - 
 
 
