@@ -46,6 +46,7 @@ React course for beginners given to Check Point on November 2019
   - Props, prop-types, defaultProps
   - state, useState
   - Events
+  - component lifecycle, useEffect
   - Video Lecture: https://www.youtube.com/watch?v=jpmyfv_w-fw&feature=youtu.be
 
 - React Component EX
@@ -57,6 +58,17 @@ React course for beginners given to Check Point on November 2019
   - Uncontrolled, ref, useRef, createRef
   - controlled
   - code duplication problem
-  - 
+  - HOC
+  - render props
+  - custom hooks
+  - Formik
 
+- Forms EX:
+  - Video Lecture: https://www.youtube.com/watch?v=8BtdI3-ateM
+
+- HOC, render prop, custom hooks EX:
+  - Video Lecture: https://www.youtube.com/watch?v=-tmLZX6scnY
+
+- Component communication
+  - 
 

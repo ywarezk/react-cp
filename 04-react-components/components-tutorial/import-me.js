@@ -1,0 +1,1 @@
+import PersonYariv, {hello as Hello, stam} from './export-me';
