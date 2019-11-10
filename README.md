@@ -79,7 +79,19 @@ React course for beginners given to Check Point on November 2019
 
   - Redux
     - Component communication
+    - The problem with publish subscribe and the solution
     - What is Redux
-    - 
+    - Redux Architecture
+    - Store
+    - Reducers
+    - Actions
+    - Redux dev tools
+    - State rules
     - Video Lecture: https://youtu.be/7pZmBah66zE
+
+  - Redux EX.
+    - Video Lecture: https://www.youtube.com/watch?v=3PKv9gG68Pg
+
+  - react-router
+    - Video Lecture: https://youtu.be/TR5Dx8_cJcA
 

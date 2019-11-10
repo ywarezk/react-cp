@@ -1,11 +1,17 @@
 import React, {useState} from 'react';
+import useForm from '../../custom-hooks/form.customhook';
 
  export default () => {
 
-    const [formState, setFormState] = useState({
+    // const [formState, setFormState] = useState({
+    //     email: 'yariv@nerdeez.com',
+    //     password: '12345'
+    // })
+
+    const [handleChange, formState] = useForm({
         email: 'yariv@nerdeez.com',
         password: '12345'
-    })
+    });
 
     const handleLogin = (event) => {
         console.log(
@@ -18,12 +24,12 @@ import React, {useState} from 'react';
         event.preventDefault();
     }
 
-    const handleChange = (event) => {
-        setFormState({
-            ...formState, 
-            [event.target.name]: event.target.value
-        })
-    }
+    // const handleChange = (event) => {
+    //     setFormState({
+    //         ...formState, 
+    //         [event.target.name]: event.target.value
+    //     })
+    // }
 
      return (
          <form noValidate onSubmit={handleLogin}>

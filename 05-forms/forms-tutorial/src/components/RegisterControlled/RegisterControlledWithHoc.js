@@ -1,19 +1,20 @@
 /**
- * login
+ * register form
+ * email
+ * password
+ * name
+ * 
+ * class component
  * controlled
  */
+
 import React from 'react';
-import noop from '../../hoc/noo.hoc';
+import forms from '../../hoc/forms.hoc.1';
 
-class Login extends React.Component {
-    state = {
-        email: 'yariv@nerdeez.com',
-        password: ''
-    }
+// forms(initialState)(LoginComponent) => StrongerLogin
 
-    /**
-     * will run when submittinhg the form
-     */
+ class Register extends React.Component {
+
     handleLogin = (event) => {
         console.log(`
             Email: ${this.state.email}
@@ -22,40 +23,29 @@ class Login extends React.Component {
         event.preventDefault();
     }
 
-    // handleEmailChange = (event) => {
-    //     this.setState({
-    //         email: event.target.value.toUpperCase()
-    //     })
-    // }
-
-    // handlePasswordChange = (event) => {
-    //     this.setState({
-    //         password: event.target.value
-    //     })
-    // }
-
-    handleChange = (event) => {
-        this.setState({
-            [event.target.name]: event.target.value
-        })
-    }
-    
-    render() {    
-        return (
+     render() {
+         return (
             <form onSubmit={this.handleLogin} noValidate>
-                <h1>Login Class Controlled</h1>
+                <h1>Register Class Controlled</h1>
+                <div className="form-group">
+                    <label> Name </label>
+                    <input
+                        value={this.state.name} 
+                        onChange={this.props.changeCb}
+                        type="text" className="form-control" name="name" />
+                </div>
                 <div className="form-group">
                     <label> Email </label>
                     <input
                         value={this.state.email} 
-                        onChange={this.handleChange}
+                        onChange={this.props.changeCb}
                         type="email" className="form-control" name="email" />
                 </div>
                 <div className="form-group">
                     <label> Password </label>
                     <input
                         value={this.state.password}
-                        onChange={this.handleChange}
+                        onChange={this.props.changeCb}
                         placeholder="Please enter your password" 
                         name="password" type="password" className="form-control" />
                 </div>
@@ -63,9 +53,12 @@ class Login extends React.Component {
                     <button className="btn btn-primary" type="submit">Login</button>
                 </div>
             </form>
-        )
+         );
      }
  }
 
- export default noop(Login);
-
+ forms({
+    name: 'Yariv Katz',
+    email: 'yariv@nerdeez.com',
+    password: ''
+ })(Register)

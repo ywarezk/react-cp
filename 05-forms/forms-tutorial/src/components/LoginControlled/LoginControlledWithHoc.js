@@ -3,13 +3,9 @@
  * controlled
  */
 import React from 'react';
-import noop from '../../hoc/noo.hoc';
+import forms from '../../hoc/forms.hoc.1';
 
 class Login extends React.Component {
-    state = {
-        email: 'yariv@nerdeez.com',
-        password: ''
-    }
 
     /**
      * will run when submittinhg the form
@@ -34,12 +30,6 @@ class Login extends React.Component {
     //     })
     // }
 
-    handleChange = (event) => {
-        this.setState({
-            [event.target.name]: event.target.value
-        })
-    }
-    
     render() {    
         return (
             <form onSubmit={this.handleLogin} noValidate>
@@ -47,15 +37,15 @@ class Login extends React.Component {
                 <div className="form-group">
                     <label> Email </label>
                     <input
-                        value={this.state.email} 
-                        onChange={this.handleChange}
+                        value={this.props.state.email} 
+                        onChange={this.props.changeCb}
                         type="email" className="form-control" name="email" />
                 </div>
                 <div className="form-group">
                     <label> Password </label>
                     <input
-                        value={this.state.password}
-                        onChange={this.handleChange}
+                        value={this.props.state.password}
+                        onChange={this.props.changeCb}
                         placeholder="Please enter your password" 
                         name="password" type="password" className="form-control" />
                 </div>
@@ -67,5 +57,8 @@ class Login extends React.Component {
      }
  }
 
- export default noop(Login);
+ export default form({
+    email: 'yariv@nerdeez.com',
+    password: ''
+ })(Login);
 

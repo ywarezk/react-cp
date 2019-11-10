@@ -1,10 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import LoginFunction from './components/Login/LoginFunction';
 import LoginClass from './components/Login/LoginClass';
 import LoginControlledClass from './components/LoginControlled/LoginControlledClass';
 import LoginControlledFunction from './components/LoginControlled/LoginControlledFunction';
+import LoginRenderNoop from './components/LoginControlled/LoginControlledWithNoop';
+import LoginFormik from './components/LoginFormik/LoginFormik';
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
 
             <LoginControlledFunction />
             <LoginControlledClass />
+
+            <LoginRenderNoop />
+
+            <LoginFormik />
           </div>
         </div>
       </div>

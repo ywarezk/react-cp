@@ -10,6 +10,8 @@
 
 import React from 'react';
 
+// forms(initialState)(LoginComponent) => StrongerLogin
+
  export default class Register extends React.Component {
     state = {
         name: 'Yariv Katz',
