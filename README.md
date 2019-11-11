@@ -85,7 +85,7 @@ React course for beginners given to Check Point on November 2019
     - Store
     - Reducers
     - Actions
-    - Redux dev tools
+    - Redux dev tools 
     - State rules
     - combineReducers
     - Video Lecture: https://youtu.be/7pZmBah66zE
